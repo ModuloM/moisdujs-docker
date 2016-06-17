@@ -1,0 +1,9 @@
+# Node logs
+npm-debug.log
+
+# IntelliJ directory
+.idea/
+
+# Node directories
+node_modules
+dist

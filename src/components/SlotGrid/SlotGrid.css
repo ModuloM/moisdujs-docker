@@ -1,0 +1,24 @@
+.slot-grid {
+    vertical-align: top;
+    border: 1px solid lightgray;
+    background: #fff repeating-linear-gradient(to bottom, transparent 0, transparent 44px, #ededed 45px, #ededed 88px);
+    background-size: 100% 88px;
+    background-position-y: 72px;
+}
+
+.slot-column {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+h4 {
+    background: lightgray;
+    margin: 0;
+    padding: 10px;
+    height: 72px;
+    font-size: 16px;
+}
+
+.td {
+    padding: 10px;
+}

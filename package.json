@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clean": "test -d ./node_modules/ && rm -rf ./node_modules || echo \"no node_modules/ folder, continue\"",
     "start": "node server.js",
     "test": "cross-env NODE_ENV=test NODE_PATH=./src mocha ./test/**/*.spec.js --recursive --compilers js:babel-register --require ./test/setup.js",
     "test:watch": "npm test -- --watch",
-    "build": "rimraf dist && cross-env NODE_ENV=production webpack --config ./webpack.config.prod.js --progress --profile --colors"
+    "build": "rimraf dist && cross-env NODE_ENV=production webpack --config ./webpack.config.prod.js --progress --profile --colors",
+    "build:docker": "./build-docker.sh"
   },
   "author": "",
   "license": "ISC",
